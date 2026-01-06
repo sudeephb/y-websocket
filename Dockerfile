@@ -7,4 +7,5 @@ USER node
 RUN npm install
 COPY --chown=node:node . .
 EXPOSE 1234
+RUN npm dist
 CMD [ "npm", "start" ]
